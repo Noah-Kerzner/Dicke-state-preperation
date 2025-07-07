@@ -1,4 +1,4 @@
-# Dicke-state-preperation-notebooks
+# Dicke-state-preperation
 A collection of Jupyter notebooks and .py files to simulate the preparation of qudit Dicke states
 
 
@@ -28,3 +28,7 @@ A collection of Jupyter notebooks and .py files to simulate the preparation of q
 - `SU(d)_O(1)_qpe.ipynb` : $SU(d)$ qpe in $O(1)$ depth -- this code functions but requires extensive memeory due to amount of ancillas -- with examples
 - `SU(d)_O(log(n))_qpe.ipynb` : $SU(d)$ qpe simulator in $O(dlog(n))$ depth with examples
 
+## Notes 
+
+- As stated above the $SU(d)$ qpe in $O(1)$ is difficult to simulate because of ancilla count. **Do not use for systems with more then 20 ancillas**
+- Operation of each file described by comments in file
