@@ -4,6 +4,8 @@ A collection of Jupyter notebooks and .py files to simulate the preparation of q
 
 ## Files
 
+- `line-supp.py` : Proof of concept for 2 linear superpostions of $SU(2)$ spin-$s$ Dicke States by $O(1)$ qpe through Hadamard test
+
 ### .py files in `spin-s` folder
 
 - `correct_qudit_qpe.py` : $SU(2)$ spin-$s$ qpe simulator in $O(log(2sn))$ depth
@@ -25,3 +27,4 @@ A collection of Jupyter notebooks and .py files to simulate the preparation of q
 - `SU(d)_dicke_states.ipynb` : $SU(d)$ $SU(d)$ unitary preperation simulator with examples
 - `SU(d)_O(1)_qpe.ipynb` : $SU(d)$ qpe in $O(1)$ depth -- this code functions but requires extensive memeory due to amount of ancillas -- with examples
 - `SU(d)_O(log(n))_qpe.ipynb` : $SU(d)$ qpe simulator in $O(dlog(n))$ depth with examples
+
