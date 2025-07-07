@@ -1,5 +1,5 @@
 # Dicke-state-preperation
-A collection of Jupyter notebooks and .py files to simulate the preparation of qudit Dicke states
+A collection of Jupyter notebooks and .py files to simulate the preparation of qudit Dicke states using `CIRQ`
 
 
 ## Files
