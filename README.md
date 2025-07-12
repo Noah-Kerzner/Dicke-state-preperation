@@ -1,6 +1,7 @@
 # Dicke-state-preparation
 A collection of Jupyter notebooks and .py files to simulate the preparation of qudit Dicke states using `CIRQ`
 
+Based on "Simple ways of preparing qudit Dicke states", by Noah B. Kerzner, Federico Galeazzi and Rafael I. Nepomechie
 
 ## Files
 
