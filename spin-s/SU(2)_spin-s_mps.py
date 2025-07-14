@@ -234,10 +234,10 @@ def ditUgate(quds, anc_qud, n, k, i, s):
         s (float): the spin of the system
 
     """    
-    for l in range(int(max(0, 2*s*(i-n-1)+k)),min(int(2*s*i),k)):
-        yield ditIgate(quds, anc_qud, n, k, i, l, s)
-    # for l in range(k):
+    # for l in range(int(max(0, 2*s*(i-n-1)+k)),min(int(2*s*i),k)):
     #     yield ditIgate(quds, anc_qud, n, k, i, l, s)
+    for l in range(k):
+        yield ditIgate(quds, anc_qud, n, k, i, l, s)
 
 def ditU(qubs, qud, n, k, s):
     """
