@@ -15,9 +15,9 @@ Based on "Simple ways of preparing qudit Dicke states", by Noah B. Kerzner, Fede
 
 ### .ipynb files in `spin-s` folder
 
-- `SU(2)_spin-s_mps.ipynb` : $SU(2)$ spin - $s$ unitary preparation simulator with examples
-- `SU(2)_spin-s_O(1)_qpe.ipynb` : $SU(2)$ spin - $s$ qpe simulator in $O(1)$ depth with examples
-- `SU(2)_spin-s_qpe_O(log(n)).ipynb` : $SU(2)$ spin - $s$ qpe simulator in $O(log(2sn))$ depth with examples
+- `SU(2)_spin-s_mps.ipynb` : $SU(2)$ spin - $s$ Dicke state preparation based on MPS, with examples
+- `SU(2)_spin-s_qpe_O(1).ipynb` : $SU(2)$ spin - $s$  Dicke state preparation based on QPE in $O(1)$ depth, with examples
+- `SU(2)_spin-s_qpe_O(log(n)).ipynb` : $SU(2)$ spin - $s$ Dicke state preparation based on QPE in $O(log(sn))$ depth, with examples
 
 ### .py files in `SU(d)` folder
 
@@ -27,10 +27,9 @@ Based on "Simple ways of preparing qudit Dicke states", by Noah B. Kerzner, Fede
 
 ### .ipynb files in `SU(d)` folder
 
-
-- `SU(d)_dicke_states.ipynb` : $SU(d)$ $SU(d)$ unitary preparation simulator with examples
-- `SU(d)_O(1)_qpe.ipynb` : $SU(d)$ qpe in $O(1)$ depth with examples -- this code functions but requires extensive memory due to amount of ancillas
-- `SU(d)_O(log(n))_qpe.ipynb` : $SU(d)$ qpe simulator in $O(dlog(n))$ depth with examples
+- `SU(d)_mps.ipynb` : $SU(d)$ Dicke state preparation based on MPS, with examples
+- `SU(d)_qpe_O(1).ipynb` : $SU(d)$ Dicke state preparation based on QPE in $O(1)$ depth, with examples -- this code requires extensive memory due to amount of ancillas
+- `SU(d)_qpe_O(log(n)).ipynb` : $SU(d)$ Dicke state preparation based on QPE in $O(log(n))$ depth, with examples
 
 ## Notes 
 
