@@ -12,12 +12,14 @@ Based on "Simple ways of preparing qudit Dicke states", by Noah B. Kerzner, Fede
 - `SU(2)_spin-s_mps.ipynb` : $SU(2)$ spin - $s$ Dicke state preparation based on MPS, __with examples__ 
 - `SU(2)_spin-s_qpe_O(1).ipynb` : $SU(2)$ spin - $s$ Dicke state preparation based on QPE in $O(1)$ depth, __with examples__
 - `SU(2)_spin-s_qpe_O(log(n)).ipynb` : $SU(2)$ spin - $s$ Dicke state preparation based on QPE in $O(log(sn))$ depth, __with examples__
+- `SU(2)_spin-s_qpe_hadamard.ipynb` : $SU(2)$ spin - $s$ Dicke state preparation based on QPE - Hadamard test, __with examples__
 
 ### .py files in `spin-s` folder
 
 - `SU(2)_spin-s_mps.py`: $SU(2)$ spin - $s$ Dicke state preparation based on MPS
 - `SU(2)_spin-s_qpe_O(1).py` : $SU(2)$ spin - $s$ Dicke state preparation based on QPE in $O(1)$ depth
 - `SU(2)_spin-s_qpe_O(log(n)).py` : $SU(2)$ spin - $s$ Dicke state preparation based on QPE in $O(log(sn))$ depth
+- `SU(2)_spin-s_qpe_hadamard.ipynb` : $SU(2)$ spin - $s$ Dicke state preparation based on QPE - Hadamard test
 
 ### .ipynb files in `SU(d)` folder
 
