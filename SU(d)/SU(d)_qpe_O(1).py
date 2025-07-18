@@ -1,3 +1,5 @@
+# Read paper at https://arxiv.org/abs/2507.13308
+
 import matplotlib.pyplot as plt
 import cirq
 import numpy as np

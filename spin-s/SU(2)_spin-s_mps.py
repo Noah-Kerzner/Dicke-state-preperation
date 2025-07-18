@@ -1,3 +1,5 @@
+# Read paper at https://arxiv.org/abs/2507.13308
+
 import cirq
 import numpy as np
 from scipy.special import comb
@@ -266,11 +268,11 @@ def qudit_dicke(n,k,s):
 
     print("\n=== Final State Vector ===")
     result = sim.simulate(circuit)
-    print(circuit)
+    #print(circuit)
     print(cirq.dirac_notation(result.final_state_vector, qid_shape=(int(2 * s + 1),) * n + (k + 1,)))
 
 
 
-n,k,s=2,2,1
+n,k,s=2,4,1
 
 qudit_dicke(n,k,s)

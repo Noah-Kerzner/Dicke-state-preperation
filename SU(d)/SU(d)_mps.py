@@ -1,3 +1,5 @@
+# Read paper at https://arxiv.org/abs/2507.13308
+
 import cirq
 import numpy as np
 import itertools
@@ -95,6 +97,8 @@ class a_sets:
                 gamma_val = self._c(self.n, self.k_vec, i, a_new) * self._c(i, a_new, i - 1, a) / self._c(self.n, self.k_vec, i - 1, a)
                 return gamma_val
         return 0
+    
+
         
 
     def _c(self,n:int,k: np.ndarray,l: int, a:  np.ndarray)-> float:
@@ -102,36 +106,6 @@ class a_sets:
         val = multinomial(l,a) * multinomial(n - l, k - a) / multinomial(n, k)
         return np.sqrt(val)
 
-    def get_dit_thetas_2(self, i, p):
-        thetas = []
-        gamms=[]
-        if p not in self._j_rev[i - 1]:
-            return [0] * (self.d - 1)
-        a = self.j_reverse(i - 1, p)
-
-        for m in range(self.d - 1):
-            gamma_val = self.gamma(i, p, m)
-
-            if gamma_val == 0:
-                a_new = a + m_hat(m, self.d)
-                if tuple(a_new) in self._j_forw[i]:
-                    thetas.append(0)
-                else:
-                    thetas.append(np.pi)
-                continue
-
-            # Compute denominator from previously calculated thetas
-            denom = list_prod(thetas)
-            if denom < 1e-10:
-                thetas.append(0)
-                continue
-
-            val = gamma_val / denom
-            val = np.clip(val, -1, 1)
-            theta = 2 * np.arccos(val)
-            thetas.append(theta)
-
-        return thetas
 
     def get_dit_thetas(self, i, p):
         thetas = []
@@ -406,10 +380,3 @@ if __name__=="__main__":
     k=(1,2,1)
     qudit_dicke(k)
 
-
-    
-
-    # x,y,z=make_a_lists(k,sum(k))
-    # # for i in y:
-    # #     print(i)
-    # print(y[5])

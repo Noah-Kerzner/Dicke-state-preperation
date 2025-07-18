@@ -3,6 +3,7 @@ Written by Noah Kerzner
 
 technical constant depth for spin-s systems using 1 ancila qudit. Further a linear superpostion scheme is written.
 
+Read paper at https://arxiv.org/abs/2507.13308
 '''
 
 
@@ -219,8 +220,6 @@ def qpe(k:int, dim_anc: int, d: int,n:int,  working_vec: list[cirq.Qid], mode=0)
     # Apply inverse Hadamard (inverse Fourier) to ancilla qudit
     yield qudH(dim_anc).inverse().on(anc_qud) 
 
-    # Apply cyclic shift down by k to ancilla qudit
-    #yield ditminus(dim_anc-1,k).on(anc_qud)
 
     if mode==0: # mode to measure or not 
         # Measure ancilla qudit to estimate phase (k)
@@ -329,7 +328,7 @@ def dicke_simulate(n:int,k: int, s: float,print_circ=False):
     """
     d=int(2*s+1)  # dimension of working qudits
 
-    dim_anc=2*s*n+1  # dimension of ancilla qudit
+    dim_anc=int(2*s*n+1)  # dimension of ancilla qudit
 
     # Prepare working qudits with labels starting at l (which is undefined here, assuming 0)
     l=1  # added definition for l to avoid error
@@ -358,8 +357,7 @@ def dicke_simulate(n:int,k: int, s: float,print_circ=False):
         print(circuit)
     # Print the final state vector in Dirac notation
     print(cirq.dirac_notation(result.final_state_vector, qid_shape=(dim_anc,) + (d,)*n))
-
-
+   
 
 
 def dicke_shots(n,k,s,shots=10,mode=0): 
@@ -452,4 +450,6 @@ def analyze_counters( dickes: Counter, estimated_k: int):
 if __name__=="__main__":
     # Run linear Dicke state simulation with parameters n=3, k1=2, k2=1, s=1
     #dicke_shots(2,2,1,1000)  # example usage commented out
-    dicke_simulate(3,2,1) # state output has ancila as first qudit then working
+    dicke_simulate(2,4,3,True) # state output has ancila as first qudit then working
+
+

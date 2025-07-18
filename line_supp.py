@@ -3,6 +3,8 @@ Written by Noah Kerzner
 
 technical constant depth for spin-s systems using 1 ancila qudit. Further a linear superpostion scheme is written.
 
+
+read paper at https://arxiv.org/abs/2507.13308
 '''
 
 

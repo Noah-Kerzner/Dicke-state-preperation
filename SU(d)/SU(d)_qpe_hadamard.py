@@ -1,3 +1,6 @@
+# Read paper at https://arxiv.org/abs/2507.13308
+
+
 import cirq
 import numpy as np
 
