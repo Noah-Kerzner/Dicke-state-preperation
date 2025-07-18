@@ -3,6 +3,8 @@ A collection of Jupyter notebooks and .py files to simulate the preparation of q
 
 Based on "Simple ways of preparing qudit Dicke states", by Noah B. Kerzner, Federico Galeazzi and Rafael I. Nepomechie
 
+https://arxiv.org/abs/2507.13308
+
 Can run on Google Colab  (  https://colab.research.google.com ) or on a local installation of python and jupyter 
 
 ## Files
